@@ -13,6 +13,6 @@ app.use('/proxy', (req, res) => {
   req.pipe(request(url)).pipe(res);
 });
 
-app.listen(3002, () => {
+app.listen(port, () => {
   console.log(`Proxy server running${port}`);
 });
